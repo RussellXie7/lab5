@@ -3,5 +3,13 @@ var data = require('../data.json');
 
 exports.view = function(req, res){
 	console.log(data);
-	res.render('index');
+	res.render('index',{
+		'data': data
+	});
+
+
+	// var name = reg.query.name;
+	// var description = req.params.description
+	// console.log(description)
+	// res.redirect('/');
 };
